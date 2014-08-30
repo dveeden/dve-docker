@@ -1,4 +1,4 @@
-FROM dveeden:ndb72base
+FROM dveeden/mysqlcluster72:base
 MAINTAINER Daniël van Eeden <docker@myname.nl>
 
 RUN cd /opt/mysql; ./scripts/mysql_install_db --user=mysql --datadir=/usr/local/mysql/data
