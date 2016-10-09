@@ -1,6 +1,7 @@
-FROM dveeden/mysqlcluster72:base
+FROM dveeden/mysqlcluster74:base
 MAINTAINER Daniël van Eeden <docker@myname.nl>
-
+RUN yum -y install perl perl-Data-Dumper
+RUN mkdir -p /usr/local/mysql
 RUN cd /opt/mysql; ./scripts/mysql_install_db --user=mysql --datadir=/usr/local/mysql/data
 ADD my.cnf /etc/
 EXPOSE 3306

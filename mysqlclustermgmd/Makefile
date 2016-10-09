@@ -1,2 +1,2 @@
 all:
-	docker.io build -t dveeden/mysqlcluster72:ndb_mgmd .
+	docker build -t dveeden/mysqlcluster74:ndb_mgmd .

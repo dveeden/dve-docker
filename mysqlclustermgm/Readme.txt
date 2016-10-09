@@ -1,10 +1,10 @@
 
 Run ndb_mgmd:
-docker.io run -d dveeden:ndb72ndbmgmd --name mgm01
+docker run -d dveeden:ndb74ndbmgmd --name mgm01
 
 Run ndb_mgm:
-docker.io run -it --link suspicious_pasteur:mgm01 dveeden:ndb72ndbmgm
+docker run -it --link suspicious_pasteur:mgm01 dveeden:ndb74ndbmgm
 
 Run ndbmtd:
-docker.io run -d --link boring_euclid:mgm01 dveeden:ndb72ndbmtd
-docker.io run -d --link boring_euclid:mgm01 dveeden:ndb72ndbmtd
+docker run -d --link boring_euclid:mgm01 dveeden:ndb74ndbmtd
+docker run -d --link boring_euclid:mgm01 dveeden:ndb74ndbmtd

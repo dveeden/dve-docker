@@ -1,4 +1,4 @@
-FROM dveeden/mysqlcluster72:base
+FROM dveeden/mysqlcluster74:base
 MAINTAINER Daniël van Eeden <docker@myname.nl>
 
 RUN mkdir -p /usr/local/mysql/data

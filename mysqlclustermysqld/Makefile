@@ -1,2 +1,2 @@
 all:
-	docker.io build -t dveeden/mysqlcluster72:mysqld .
+	docker build -t dveeden/mysqlcluster74:mysqld .
